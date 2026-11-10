@@ -25,10 +25,10 @@ These are all trained in Phase 1 and reused for fine-tuning after that.
 | Model | Architecture | Tokenizer |
 |---|---|---|
 | Model 1 | Encoder-decoder | BPE 35k |
-| Model 2 | Decoder-only | BPE 35k |
-| Model 2 clean (`m2p`) | Decoder-only | BPE 32k (multilingual, deduplicated, preprocessed) |
-| Model 3 | Post-LN version | BPE 50k |
-| Model 4 | | BPE 50k |
+| Model 2 | Decoder-only SwiGLU | BPE 35k |
+| Model 2 clean (`m2p`) | Decoder-only GELU | BPE 32k (multilingual, deduplicated, preprocessed) |
+| Model 3 | Post-LN version +WNorm | BPE 50k |
+| Model 4 | MSM| BPE 50k |
 | Longformer | Longformer | BPE 32k (same as model 2 clean) |
 
 The `m1`, `m2`, `m2p`, `m3`, `m4` names in the Phase 2 to 7 files refer to these. The `p` in `m2p` is for preprocessed.
