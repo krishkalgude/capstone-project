@@ -39,7 +39,7 @@ Across the fine-tuning phases I tried LoRA, rsLoRA, AdaLoRA, LoRMA (and LoRMA+),
 
 ## How the pieces fit together
 
-The one rule to remember: **a fine-tuning notebook always needs the tokenizer and the pretrained weights from Phase 1 for the model it's fine-tuning.**
+**a fine-tuning notebook always needs the tokenizer and the pretrained weights from Phase 1 for the model it's fine-tuning.**
 
 - Each model only works with the tokenizer it was pretrained with. The 35k, 32k and 50k tokenizers give different token ids, so they can't be swapped.
 - Fine-tuning starts from the Phase 1 weights, so you need the output of the matching Phase 1 model notebook too.
